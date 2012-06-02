@@ -2,21 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//variables
+
+//fonts
+
+$bold_font: 'SteelfishRg-Bold';
+$regular_font: 'SteelfishRg-Regular';
+$extra_bold_font: 'SteelfishEb-Regular';
+$write: 'ClassicRound-Medium';
+
+//variables_end
+
 		
 #menu {
 	margin: 0 auto;
-	width: 1010px;
-	height: 340px;
+	width: 1000px;
+	height: 240px;
 	}
 
 .menu_button {
-	width: 140px;
-	height: 170px;
+	width: 180px;
+	height: 220px;
 	margin-left: 10px;
 	margin-right: 10px;
-	padding: 20px;
 	float: left;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	background-image: url(../images/pattern2.png);
+	overflow: hidden;
 	}
+
+#anonymity_button, #tracking_button, #methods_button, #problems_button, #statistics_button {
+	margin-top: 10px;
+	width: 180px;
+	height: 200px;
+	background-color: #ccc;
+	}
+
+#anonymity_button_description, #tracking_button_description, #methods_button_description, #problems_button_description, #statistics_button_description {
+	background-color: #555;
+	color: #eee;
+	width: 180px;
+	height: 240px;
+	h3 {
+		font-family: $bold_font;
+		font-size: 1.75em;
+		display: block-inline;
+		padding: 20px;
+		width: 140px;
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
