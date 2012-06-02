@@ -1,4 +1,7 @@
 class MattersController < ApplicationController
+
+	load_and_authorize_resource
+
   # GET /matters
   # GET /matters.json
   def index

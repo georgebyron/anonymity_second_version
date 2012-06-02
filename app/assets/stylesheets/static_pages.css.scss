@@ -1,3 +1,22 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+		
+#menu {
+	margin: 0 auto;
+	width: 1010px;
+	height: 340px;
+	}
+
+.menu_button {
+	width: 140px;
+	height: 170px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 20px;
+	float: left;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-image: url(../images/pattern2.png);
+	}

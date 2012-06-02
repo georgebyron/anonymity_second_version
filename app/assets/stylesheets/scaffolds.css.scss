@@ -1,12 +1,63 @@
+
+//variables
+
+//fonts
+
+$bold_font: 'SteelfishRg-Bold';
+$regular_font: 'SteelfishRg-Regular';
+$extra_bold_font: 'SteelfishEb-Regular';
+$write: 'ClassicRound-Medium';
+
+//variables_end
+
+
 body {
-  background-color: #fff;
+	margin: 0 auto;
+	background-color: #ddd;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: $write, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
+.clear {
+	clear: both;
+	}
+
+#logo {
+	color: 333;
+	font-family: $extra_bold_font;
+	padding: 30px;
+	 h1, h2{
+		display: block;
+		}
+	 h1 {
+		font-size: 7.5em;
+		/*text-shadow:
+			1px 1px 0 #fc0,
+			2px 2px 0 #fc0, 
+			3px 3px 0 #fc0,
+			4px 4px 0 #fc0;
+		*/
+		/*text-shadow: 
+			-1px -1px #111,
+			-2px -2px #111, 
+			1px 1px #fff,
+			2px 2px #fff;*/
+	/*-webkit-text-stroke: 1px black;
+   color: #a60;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;*/
+		}
+	 h2 {
+		font-size: 4em;
+		}
+	}
+
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: $write, verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px; }
 
