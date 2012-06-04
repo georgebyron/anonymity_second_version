@@ -7,3 +7,57 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function () {
+
+	$('#anonymity_button').mouseenter(function () {
+		 $('#anonymity_button_description').stop().animate({top:'-120px'}, 500)
+			}
+		);
+
+	$('#anonymity_button').mouseleave(function () {
+			$('#anonymity_button_description').stop().animate({top:'0px'}, 500)
+		}
+	);
+
+	$('#tracking_button').mouseenter(function () {
+		 $('#tracking_button_description').stop().animate({top:'-120px'}, 500)
+			}
+		);
+
+	$('#tracking_button').mouseleave(function () {
+			$('#tracking_button_description').stop().animate({top:'0px'}, 500)
+		}
+	);
+
+	$('#problems_button').mouseenter(function () {
+		 $('#problems_button_description').stop().animate({top:'-120px'}, 500)
+			}
+		);
+
+	$('#problems_button').mouseleave(function () {
+			$('#problems_button_description').stop().animate({top:'0px'}, 500)
+		}
+	);
+
+	$('#methods_button').mouseenter(function () {
+		 $('#methods_button_description').stop().animate({top:'-120px'}, 500)
+			}
+		);
+
+	$('#methods_button').mouseleave(function () {
+			$('#methods_button_description').stop().animate({top:'0px'}, 500)
+		}
+	);
+
+	$('#statistics_button').mouseenter(function () {
+		 $('#statistics_button_description').stop().animate({top:'-120px'}, 500)
+			}
+		);
+
+	$('#statistics_button').mouseleave(function () {
+			$('#statistics_button_description').stop().animate({top:'0px'}, 500)
+		}
+	);
+
+});
