@@ -7,22 +7,30 @@ Anonymity2::Application.routes.draw do
 	get "static_pages/home"
 
   get "static_pages/help"
+	match "pomoc" => "static_pages#help"
 
   get "static_pages/about"
+	match "o_stronie" => "static_pages#about"
 
   get "static_pages/anonymity"
+	match "anonimowosc" => "static_pages#anonymity"
 
   get "static_pages/tracking"
+	match "tropienie" => "static_pages#tracking"
 
   get "static_pages/methods"
+	match "sposoby" => "static_pages#methods"
 
   get "static_pages/problems"
+	match "problemy" => "static_pages#problems"
 
   get "static_pages/statistics"
+	match "statystyki" => "static_pages#statistics"
 
   resources :comments
 
   resources :matters
+	match "dyskusje" => "Matters#index"
 
 	root :to => 'static_pages#home'
 
