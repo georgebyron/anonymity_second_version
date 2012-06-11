@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
+
+ @latest_matters = Matter.all(order: 'created_at DESC', limit: 3)
+
+
   def home
   end
 

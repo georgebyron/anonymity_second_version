@@ -8,8 +8,40 @@ $regular_font: 'SteelfishRg-Regular';
 $extra_bold_font: 'SteelfishEb-Regular';
 $write: 'ClassicRound-Medium';
 
+//footer
+
+$foot_height: 200px;
+
 //variables_end
 
+* {
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+img, a {
+	border: 0;
+	}
+
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -15em;
+}
+
+.footer, .push {
+height: 15em;
+}
+
+.footer {
+	background-image: url('../images/pattern5.png');
+	margin-top: 100px;
+	border-top: solid 2px #111;
+	}
 
 body {
 	margin: 0 auto;
@@ -24,7 +56,13 @@ body {
 	clear: both;
 	}
 
+#top {
+	background-image: url('../images/pattern2.png');
+}
+
 #logo {
+	margin: 0 auto;
+	width: 375px;
 	color: 333;
 	font-family: $extra_bold_font;
 	padding: 30px;
@@ -56,6 +94,10 @@ body {
 		font-size: 4em;
 		}
 	}
+#logo_img {
+	width: 375px;
+	margin: 0 auto;
+	}
 
 p, ol, ul, td {
   font-family: $write, verdana, arial, helvetica, sans-serif;
@@ -70,10 +112,10 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666; }
+     }
   &:hover {
-    color: #fff;
-    background-color: #000; } }
+    color: #111;
+    }}
 
 div {
   &.field, &.actions {
@@ -106,3 +148,41 @@ div {
   ul li {
     font-size: 12px;
     list-style: square; } }
+
+#menu_box {
+	background-image: url('../images/pattern2.png');
+	border-bottom: solid #111 2px;
+	}
+
+#main_menu {
+		margin: 0 auto;
+		text-align: center;
+	a {
+		color: #111;
+		text-decoration: none;
+		font-family: $bold_font;
+		font-size: 2.5em;
+		margin-right: 20px;
+		/*text-shadow: 
+			-1px -1px #777,
+			-2px -2px #777, 
+			1px 1px #eee,
+			2px 2px #eee;*/
+		&:visited {
+  	  }
+  	&:hover {
+  	  color: #5d88b1; }
+		}	
+}
+
+.belka {
+	font-family: $bold_font;
+	font-size: 1.5em;
+	color: #000;
+	}
+
+.button {
+	font-family: $regular_font;
+	font-size: 2em;
+	color: #5d88b1;
+	}

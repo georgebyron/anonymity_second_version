@@ -1,3 +1,124 @@
 // Place all the styles related to the matters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//fonts
+
+$bold_font: 'SteelfishRg-Bold';
+$regular_font: 'SteelfishRg-Regular';
+$extra_bold_font: 'SteelfishEb-Regular';
+$write: 'ClassicRound-Medium';
+
+
+.main_panel {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 70px;
+	h1 {
+		font-family: $extra_bold_font;
+		color: #eaa511;// #5d88b1;
+		font-size: 5.5em;
+		margin-bottom: 30px;
+		text-align: center; }}
+
+.discussions, .single_issue {
+	text-align: left;
+	padding: 20px;
+	padding-top: 40px;
+	width: 960px;
+	margin: 0 auto;
+	h1 {
+		font-family: $extra_bold_font;
+		color: #eaa511;// #5d88b1;
+		font-size: 3.5em;}
+	p {
+		padding: 20px;
+		margin-top: 10px;
+		font-family: $write;
+		font-size: 1.5em;
+	}
+	}
+ 
+.single_issue {
+	p {
+		padding: 20px;
+		margin-top: 10px;
+		font-family: $write;
+		font-size: 1.5em;
+		}
+	h1 {
+		color: #111;
+	}
+}
+
+.main_matter {
+	border: 1px #111 solid;
+	background-image: url('../images/pattern6.png');
+	h1 {
+		}
+	margin-bottom: 30px;
+	}
+
+.little_header {
+	height: 50px;
+	background-image: url('../images/pattern4.png');
+	padding: 40px 20px 0px; }
+
+.little_footer {
+		p {
+	float: right;
+	}}
+
+.comments {
+	margin-top: 20px;
+	h2 {
+		font-family: $bold_font;
+		font-size: 2.5em;
+		color: #5d88b1;
+		margin-bottom: 20px;
+	}}
+
+.single_comment {
+	border: solid #111 1px;
+	background-image: url('../images/pattern2.png');
+	padding: 20px;
+	margin-bottom: 20px;
+	 }
+
+.issue {
+	width: 700px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-image: url('../images/pattern6.png');
+	border: 3px #111 solid;
+	h2 {
+		color: #5d88b1;
+		font-size: 3em;
+		a {
+			text-decoration: none;
+			color: #5d88b1;
+			}}
+	p {
+		padding: 20px;
+		margin-top: 10px;
+		font-family: $write;
+		font-size: 1.5em;
+	}
+}
+
+.date {
+	float: right;
+	}
+
+.author {
+	float: left;
+	}
+
+.extend_issue {
+	color: #5d88b1;
+	font-family: $write;
+	font-size: 1.5em;
+	}
+
+

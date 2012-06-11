@@ -1,62 +1,68 @@
-<div id="menu">
+<div id="home_page">
+	<div id="menu">
 
 <div class="menu_button">
+	<a href="anonimowosc">
 	<div id="anonymity_button">
-		image placeholder
-		<a href="anonimowosc">ANONIMOWOŚĆ</a>
+		<img src="images/ikona1.png" alt="anonimowość" class="ikona"  style="width: 80px; margin-left: 20px;">
 	</div>
 	<div id="anonymity_button_description">
 		<h3>anonimowość</h3>
 		<p>pojęcie anonimowości</p>
 	</div>
+	</a>
 </div>
 
 
 <div class="menu_button">
+	<a href="tropienie">
 	<div id="tracking_button">
-		image placeholder
-		<a href="tropienie">ŚLEDZENIE</a>
+			<img src="images/ikona2.png" alt="tropienie" class="ikona">
 	</div>
 	<div id="tracking_button_description">
 		<h3>identyfikacja</h3>
-		<p>identyfikacja użytkowników w sieci</p>
+		<p>sposoby tropienia użytkowników sieci</p>
 	</div>
+	</a>
 </div>
 
 
 <div class="menu_button">
+	<a href="sposoby">
 	<div id="methods_button">
-		image placeholder
-		<a href="sposoby">SPOSOBY</a>
+		<img src="images/ikona3.png" alt="sposoby" class="ikona">
 	</div>
 	<div id="methods_button_description">
 		<h3>ukrywanie</h3>
 		<p>metody ukrywania tożsamości w sieci</p>
 	</div>
+	</a>
 </div>
 
 
 <div class="menu_button">
+	<a href="problemy">
 	<div id="problems_button">
-		image placeholder
-		<a href="problemy">PROBLEMY</a>
+		<img src="images/ikona4.png" alt="problemy" class="ikona">
 	</div>
 	<div id="problems_button_description">
 		<h3>problemy</h3>
 		<p>problemy wokół anonimowości w internecie</p>
 	</div>
+	</a>
 </div>
 
 
 <div class="menu_button">
+		<a href="statystyki">
 	<div id="statistics_button">
-		image placeholder
-		<a href="statystyki">STATYSTYKI</a>
+		<img src="images/ikona5.png" alt="problemy" class="ikona">
 	</div>
 	<div id="statistics_button_description">
 		<h3>statystki</h3>
 		<p>statystyki</p>
 	</div>
+	</a>
 </div>
 	<div class="clear"></div>
 
@@ -64,17 +70,24 @@
 
 <div id ="mainpage">
 	<div id="mainpage_content">
+
 		<div id="mainpage_matters">
-			<%= link_to 'weź udział w dyskusji', matters_path %>
-		</div>
+			<div id="text_cloud">
+				<p>Już teraz możesz wyrazić swoje zdanie i opowiedzieć się po stronie zwolenników lub przeciwników anonimowości w Internecie.</p>
+			<p>Zapraszamy do poruszania zajmujących Cię kwestii na naszym panelu dyskusyjnym. Wszystko po to, aby zwiększyć Twoje poczucie bezpieczeństwa w sieci.</p>
+				<p><%= link_to 'ZABIERZ GŁOS W DYSKUSJI', matters_path, :class=>"button" %></p>
+				</div>
+		</div>		
+
 
 		<div id="mainpage_info">
+			<img src="images/grupa.png" alt="grupa_anonimowych">
 		</div>
+
+		
 	</div>
 
 </div>
-	<div class="footer">
 
 </div>
-
 

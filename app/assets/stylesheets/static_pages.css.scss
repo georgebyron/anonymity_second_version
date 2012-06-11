@@ -13,37 +13,49 @@ $write: 'ClassicRound-Medium';
 
 //variables_end
 
-		
+
+
+#home_page {
+	background-image: url(../images/pattern2.png);
+	}
+	
 #menu {
 	margin: 0 auto;
+	padding-top: 40px;
 	width: 1000px;
 	height: 240px;
-	margin-bottom: 100px;}
+	margin-bottom: 100px;
+	a {
+		text-decoration: none;
+		border: 0;
+	}}
 
 .menu_button {
 	width: 180px;
 	height: 220px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
 	float: left;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	background-image: url(../images/pattern2.png);
+	background-image: url(../images/pattern.png);
 	overflow: hidden;
+	border: solid #111 5px;
 	}
 
 #anonymity_button, #tracking_button, #methods_button, #problems_button, #statistics_button {
 	margin-top: 10px;
-	width: 180px;
-	height: 200px;
-	background-color: #ccc;
+	width: 120px;
+	height: 180px;
+	padding: 40px 30px 0px;
 	position: relative;
 	left: 0px;
 	top: 0px;}
 
 #anonymity_button_description, #tracking_button_description, #methods_button_description, #problems_button_description, #statistics_button_description {
-	background-color: #555;
-	color: #eee;
+	/*background-color: #555;*/
+	background-image: url('../images/pattern6.png');
+	color: #000;
 	width: 180px;
 	height: 100px;
 	position: relative;
@@ -62,43 +74,167 @@ $write: 'ClassicRound-Medium';
 	}
 	 /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-
   /* IE 5-7 */
   filter: alpha(opacity=70);
-
   /* Netscape */
   -moz-opacity: 0.7;
-
   /* Safari 1.x */
   -khtml-opacity: 0.7;
-
   /* Good browsers */
   opacity: 0.7;
 }
 
-
+.ikona {
+	width: 120px;
+	}	
 #mainpage {
 	height: 300px;
 	width: 100%;
-	background-color: #ff3;
-	background-image: url('../images/pattern4.png');
+	background-image: url(../images/pattern.png);
+	border-top: 2px solid #111;
+	/*background-image: url('../images/pattern4.png');*/
 	}
 
 #mainpage_content {
 	width: 1000px;
 	margin: 0 auto;
+
 	}
 
 #mainpage_matters {
 	width: 400px;
 	padding: 50px;
-	border: solid black 1px;
+	margin: 30px 20px 0px;
+		border: solid #111 5px;
 	float: left;
 	height: 200px;
+	background-image: url(../images/pattern6.png);
 	}
 
 #mainpage_info {
-	width: 400px;
+	width: 350px;
 	padding: 40px;
-	border: solid black 1px;
 	float: left;}
+
+#text_cloud {
+	p {
+		font-family: $write;
+		font-size: 1.25em;
+		margin-bottom: 30px;}
+	}
+
+
+
+
+//static pages
+
+.static_page {
+	width: 1000px;
+	margin: 0 auto;
+	}
+
+.static_page_content {
+	width: 750px;
+	margin: 0 auto;
+	padding: 20px;
+	margin-bottom: 60px;
+	h1 {
+		font-family: $extra_bold_font;
+		font-size: 3em;
+		color: #eaa511;
+	}
+	h2 {}
+	h3 {
+		font-family: $write;
+		font-size: 1.5em;
+		color: #eaa511;//#5d88b1;
+	}
+	h4 {
+		font-family: $write;
+		font-size: 1.25em;
+	}			
+	p {
+		margin-top: 30px;
+		font-family: $write;
+		font-size: 1.25em;
+	}
+	ol {
+		margin-top: 30px;
+	}
+	li {
+		margin-top: 10px;
+		padding-left: 40px;
+	}}
+
+.pros_cons {
+	float: left;
+	width: 325px;
+	padding: 15px;
+	}
+
+.pros li, .cons li {
+		font-size: 1;
+		list-style-type: none;
+		padding: 10px;
+		margin-left: -10px;
+		margin-top: 10px;
+		 /* IE 8 */
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	  /* IE 5-7 */
+	  filter: alpha(opacity=70);
+	  /* Netscape */
+	  -moz-opacity: 0.7;
+	  /* Safari 1.x */
+	  -khtml-opacity: 0.7;
+	  /* Good browsers */
+	  opacity: 0.7;
+	}
+
+.pros li {
+	background-color: #aac6a6;
+	}
+
+.cons li {
+	background-color: #c6a6a6;
+	}
+
+.back {
+	float: right;
+	font-family: $regular_font;
+	color: #5D88B1;
+	text-decoration: none;
+	font-size: 1.5em;}
+
+.static_page_menu {
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	padding: 5px;
+	padding-right: 0px;
+		a {
+		font-family: $regular_font;
+		text-decoration: none;
+		color: #5D88B1;
+		margin-top: 20px;
+		&:hover {
+			color: #111;
+			}}
+	ul {
+		width: 950px;
+		border-bottom: solid #111 3px;
+		font-size: 3.45em;
+		list-style-type: none;		
+		li {
+			padding: 20px;
+			border-left: solid #111 3px;}
+		}
+	h1 {
+		font-family: $extra_bold_font;
+		font-size: 5em;
+		color: #eaa511;
+		float: right;
+		margin-right: 40px;}
+	}
+
+

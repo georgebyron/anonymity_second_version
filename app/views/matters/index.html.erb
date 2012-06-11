@@ -1,29 +1,28 @@
-<h1>Listing matters</h1>
+<%= render :template => './_menu.html.erb' %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Article</th>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="main_panel">
+	<h1>PANEL DYSKUSYJNY</h1>
+		<div class="discussions">
+
 
 <% @matters.each do |matter| %>
-  <tr>
-    <td><%= matter.title %></td>
-    <td><%= matter.description %></td>
-    <td><%= matter.article_id %></td>
-    <td><%= matter.name %></td>
-    <td><%= link_to 'Show', matter %></td>
-    <td><%= link_to 'Edit', edit_matter_path(matter) %></td>
-    <td><%= link_to 'Destroy', matter, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+  <div class="issue">
+    <h2><%= link_to matter.title, matter %></h2>
+    <p><%= matter.description %></p>
+		<%= link_to 'Rozwiń wątek', matter, :class=>"extend_issue" %>
+		<p>
+    	<span class="author"><%= matter.name %></span>
+			<span class="date"><%= matter.created_at.strftime('%-d-%-m-%Y') %></span>					
+		</p>
+		<% if current_admin %>	
+    <%= link_to 'edytuj', edit_matter_path(matter) %>
+    <%= link_to 'usuń', matter, confirm: 'Are you sure?', method: :delete %>
+		<% end %>
+  </div>
 <% end %>
-</table>
 
-<br />
+	</div>
 
-<%= link_to 'New Matter', new_matter_path %>
+<%= link_to 'STWÓRZ NOWY WĄTEK', new_matter_path, :class=>"button" %>
+
+</div>

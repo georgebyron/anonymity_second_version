@@ -1,2 +1,49 @@
-<h1>StaticPages#methods</h1>
-<p>Find me in app/views/static_pages/methods.html.erb</p>
+<%= render :template => './_menu.html.erb' %>
+
+<div class="static_page">
+	<div class="static_page_menu">
+		<h1>UKRYWANIE TOŻSAMOŚCI</h1>
+		<ul>
+			<li></li>
+			<li><a href="#proxy">proxy</a></li>
+			<li><a href="#tor">trasowanie cebulowe</a></li>
+			<li><a href="#p2p">peer-to-peer</a></li>
+			<li><a href="#crowds">crowds</a></li>
+			<li></li>
+		</ul>
+	</div>
+
+	<div class="static_page_content">
+		<a name="proxy"><h1>proxy</h1></a>
+<p>Anonimowe serwery proxy stosuje się aby móc ukryć swój adres IP. Proxy (albo HTTP Proxy) to usługa sieciowa, która działa podobnie jak pamięć podręczna przeglądarki internetowej. Pamięć podręczna przeglądarki internetowej (ang. Cache) pozwala na przechowywanie na bliższym serwerze kopii strony internetowej i udostępnianiu jej jeżeli pobieranie informacji z odległego serwera wydłuża czas załadowania strony.</p>
+<p>Często wykorzystuje się serwery proxy w celu zamaskowania komputera, z którego dochodzi do połączenia.Powstałe w ten sposób serwery odbierają połączenia, zmieniają adres IP nadawcy i przesyłają je dalej. Sytuacja naprawdę się komplikuje, kiedy nadawca wysyła swoją wiadomość używając przy tym kilku serwerów proxy zapewniających anonimowość. Metoda ta nosi nazwę Mix Cascades albo Multiple Proxies.</p>
+	<img src="images/proxy.png" alt="proxy">
+	<a href="#top" class="back">powrót</a>
+	</div>
+
+	<div class="static_page_content">
+		<a name="tor"><h1>trasowanie cebulowe</h1></a>
+<p>Podobnie jak cebula, przesyłane w internecie zaszyfrowane dane mają warstwy. Każdy kolejny router cebulowy (onion router), rozszyfrowuje warstwę, z której dowiaduje się, gdzie dalej przesłać pakiet danych. Ten proces nie pozwala na odczytanie źródłowego adresu IP. Najbardziej znaną technologią wykorzystującą tę metodę jest sieć TOR (The Onion Router).</p>
+<img src="images/tor.png" alt="onion_routing">
+<a href="#top" class="back">powrót</a>
+</div>
+
+
+	<div class="static_page_content">
+		<a name="p2p"><h1>peer-to-peer (P2P)</h1></a>
+	<p>W systemach P2P wszystkie komputery są połączone między sobą na takich samych zasadach. Wszystkie pełnią rolę zarówno klienta, jak i serwera. Zdarza się, że w sieci P2P pojawia się jeden nadrzędny komputer-serwer, który gromadzi informację o pozostałcych użytkownikac sieci. Jednak najbardziej zaawansowane sieci P2P funkcjonują bez centralnego serwera. Dane zostają zdecentralizowane i krążą po węzłach sieci.</p>
+<p>W takiej sieci, każdy użytkownik jest zarówno potencjalnym nadawcą jak i odbiorcą treści. Stając się uczestnikiem sieci, każdy użytkownik (peer) udostępnia dane. Ponieważ nikt nie sprawuje kontroli nad przepływem danych w sieci P2P, użytkownicy znają tylko ilość danych aktualnie przesyłanych i odbieranych ze swojego komputera. Jeżeli komunikacja jest zaszyfrowana, system wykazuje się wysoką anonimowością, ponieważ przechwycone dane nie wskazują swojego pierwotnego źródła pochodzenia.</p>
+<p>Dzisiaj sieci P2P są wykorzystywane głównie do przesyłania plików. Stały się one obiektem ataków ze strony środowisk twórczych, ze względu na nieszanowanie praw autorskich.</p>
+<img src="images/p2p.png" alt="peer-to-peer">
+	<a href="#top" class="back">powrót</a>
+	</div>
+
+	<div class="static_page_content">
+		<a name="crowds"><h1>Crowds</h1></a>
+	<p>Tak jak powyższe metody przekazują informacje przy użyciu innych komputerów, tak metoda „crowds” (ang. Tłum) ukrywa źródło informacji chowając je w ruchu „tłumu” użytkowników. Tym samym, źródło wysyłanej informacji może być przypisane dowolnemu użytkownikowi będącemu w tłumie.</p>
+<img src="images/crowds.png" alt="crowds">
+	<a href="#top" class="back">powrót</a>
+	</div>
+
+	
+</div>

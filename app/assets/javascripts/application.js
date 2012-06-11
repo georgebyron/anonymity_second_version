@@ -10,6 +10,18 @@
 
 $(document).ready(function () {
 
+//do sth with this code, DRY!
+
+//ANONYMITY BUTTON
+	$('#anonymity_button_description').hover(function () {
+		$(this).stop().show()
+	});
+
+	$('#anonymity_button_description').mouseleave(function () {
+		$(this).stop().animate({top:'0px'}, 500)
+	});
+
+
 	$('#anonymity_button').mouseenter(function () {
 		 $('#anonymity_button_description').stop().animate({top:'-120px'}, 500)
 			}
@@ -19,6 +31,15 @@ $(document).ready(function () {
 			$('#anonymity_button_description').stop().animate({top:'0px'}, 500)
 		}
 	);
+
+//TRACKING BUTTON
+	$('#tracking_button_description').hover(function () {
+		$(this).stop().show()
+	});
+
+	$('#tracking_button_description').mouseleave(function () {
+		$(this).stop().animate({top:'0px'}, 500)
+	});
 
 	$('#tracking_button').mouseenter(function () {
 		 $('#tracking_button_description').stop().animate({top:'-120px'}, 500)
@@ -30,6 +51,16 @@ $(document).ready(function () {
 		}
 	);
 
+
+//PROBLEMS BUTTON
+	$('#problems_button_description').hover(function () {
+		$(this).stop().show()
+	});
+
+	$('#problems_button_description').mouseleave(function () {
+		$(this).stop().animate({top:'0px'}, 500)
+	});
+
 	$('#problems_button').mouseenter(function () {
 		 $('#problems_button_description').stop().animate({top:'-120px'}, 500)
 			}
@@ -39,6 +70,15 @@ $(document).ready(function () {
 			$('#problems_button_description').stop().animate({top:'0px'}, 500)
 		}
 	);
+
+//METHODS BUTTON
+$('#methods_button_description').hover(function () {
+		$(this).stop().show()
+	});
+
+	$('#methods_button_description').mouseleave(function () {
+		$(this).stop().animate({top:'0px'}, 500)
+	});
 
 	$('#methods_button').mouseenter(function () {
 		 $('#methods_button_description').stop().animate({top:'-120px'}, 500)
@@ -50,6 +90,15 @@ $(document).ready(function () {
 		}
 	);
 
+//STATISTICS BUTTON
+$('#statistics_button_description').hover(function () {
+		$(this).stop().show()
+	});
+
+	$('#statistics_button_description').mouseleave(function () {
+		$(this).stop().animate({top:'0px'}, 500)
+	});
+
 	$('#statistics_button').mouseenter(function () {
 		 $('#statistics_button_description').stop().animate({top:'-120px'}, 500)
 			}
@@ -60,4 +109,36 @@ $(document).ready(function () {
 		}
 	);
 
+
+
+//SCROLLING TROLLING
+
+ $('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+
+//GRAPHS
+
+color = '#5D88B1';
+
+arrayOfData = new Array(
+   	 [30,'dyskusje',color],
+   	 [23.1,'ogłoszenia',color],
+   	 [16.5,'pytania',color],
+   	 [13.20,'teksty',color],
+   	 [9.9,'testowanie',color],
+			[3.7,'zdjęcia',color],
+			[0.4,'oprogramowanie',color],
+			[3.3,'inne',color]
+);
+
+$('#anonymity_content_stats').jqbargraph({
+  	 data: arrayOfData 
 });
+
+
+
+});
+

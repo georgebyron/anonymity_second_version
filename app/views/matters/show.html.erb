@@ -1,61 +1,58 @@
-<p id="notice"><%= notice %></p>
+<%= render :template => './_menu.html.erb' %>
 
-<p>
-  <b>Title:</b>
-  <%= @matter.title %>
-</p>
+<div class="single_issue">
+	<div class="main_matter">
+		<div class="little_header">
+			<h1><%= @matter.title %></h1>
+		</div>
+		<p class="description">
+	   <%= @matter.description %>
+		</p>
 
-<p>
-  <b>Description:</b>
-  <%= @matter.description %>
-</p>
+		<div class="little_footer">
+		<p><span class="name">~<%= @matter.name %></span></p>
+		<div class="clear"></div>
+	</div>
+</div>
 
-<p>
-  <b>Article:</b>
-  <%= @matter.article_id %>
-</p>
-
-<p>
-  <b>Name:</b>
-  <%= @matter.name %>
-</p>
-
-<h1>Discussion:</h1>
+<div class="comments">
+<h2>dyskusja:</h2>
   <% @matter.comments.each do |comment| %>
-	<p>Name</p>
+	<div class="single_comment">
 	<p><%= comment.name %></p>
 	<p><%= comment.content %></p>
-	<p><%= comment.created_at %></p>
-	<p><% if current_admin != nil %>
-			<%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %>
+	<%= comment.created_at %>
+	<% if current_admin != nil %>
+			<%= link_to 'Destroy', comment, confirm: 'Jesteś pewien, że chcesz usunąć tę wypowiedź?', method: :delete %>
 		<% end %>
-	
-  <% end %></p>
-</p>
-<p><%= form_for Comment.new, method: "post" do |comment| %>
-		<div class="field">
-    	<%= comment.hidden_field :matter_id, value: @matter.id %>
-  	</div>
-		<p> <div class="field">
-    <%= comment.label :name %><br />
+	</div>
+  <% end %>
+<p id="notice"><%= notice %></p>
+
+<div class="comment_form"><%= form_for Comment.new, method: "post" do |comment| %>
+		    	
+	<%= comment.hidden_field :matter_id, value: @matter.id %>
+ 	 <div class="field">
+    <%= comment.label 'imię' %><br />
     <%= comment.text_field :name %>
   </div>
-  <div class="field">
-    <%= comment.label :content %><br />
-    <%= comment.text_area :content %>
-  </div>
-  <div class="field">
-    <%= comment.label :email %><br />
+	  <div class="field">
+    <%= comment.label 'email (nie zostanie wyświetlony)' %><br />
     <%= comment.text_field :email %>
   </div>
-  </div></p>
+  <div class="field">
+    <%= comment.label 'treść' %><br />
+    <%= comment.text_area :content %>
+  </div>
+
+</div>
 		<div class="actions">
     	<%= comment.submit "Skomentuj" %>
 	  </div>
 <% end %>
-
-
-
-
-<%= link_to 'Edit', edit_matter_path(@matter) %> |
+</div>
+<% if current_admin %>
+<%= link_to 'Edit', edit_matter_path(@matter) %>
+<% end %> |
 <%= link_to 'Back', matters_path %>
+</div>
