@@ -237,4 +237,511 @@ $write: 'ClassicRound-Medium';
 		margin-right: 40px;}
 	}
 
+/*statistics*/
+/*------------------------------------*\
+  CHART
+\*------------------------------------*/
+.chart{
+  width:600px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.chart dt{
+  width:250px;
+	height: 50px;
+	overflow: hidden;
+  float:left;
+  margin:0 20px 5px 0;
+  padding:2px 0;
+  display:inline;
+  font-weight:bold;
+  text-align:right;
+}
+.chart dd{
+  width:324px;
+	height: 54px;
+  border-right:1px solid #ddd;
+  float:left;
+  margin-bottom:5px;
+  display:inline;
+}
+.chart dd span{
+	margin-top: 5px;
+  color:#000;
+  background:#eaa511;
+  text-align:center;
+  padding:4px 0;
+  display:block;
 
+  text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  background:-webkit-gradient(linear, left top, →
+  left bottom, from(#09f), to(#077fd0));
+  -webkit-box-reflect:below 0 →
+  -webkit-gradient(linear, left top, →
+  left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.25)));
+}
+#data-one{
+  width: 2 * 30%;
+}
+#data-two{
+  width: 2 * 23%;
+}
+#data-three{
+  width: 2 * 16%;
+}
+#data-four{
+  width: 2 * 13%;
+}
+#data-five{
+  width: 2 * 10%;
+}
+#data-six{
+  width: 2 * 4%;
+}
+#data-seven{
+  width: 2 * 1%;
+}
+#data-eight{
+  width: 2 * 3%;
+}
+
+#data-one{
+  -webkit-animation-name:bar-one; /* Give the bar an animation with a
+    unique name */
+}
+#data-two{
+  -webkit-animation-name:bar-two; /* Give the bar an animation with a
+    unique name */
+}
+#data-three{
+  -webkit-animation-name:bar-three; /* Give the bar an animation with a
+    unique name */
+}
+#data-four{
+  -webkit-animation-name:bar-four; /* Give the bar an animation with a
+    unique name */
+}
+#data-five{
+  -webkit-animation-name:bar-five; /* Give the bar an animation with a
+    unique name */
+}
+#data-six{
+  -webkit-animation-name:bar-six; /* Give the bar an animation with a
+    unique name */
+}
+#data-seven{
+  -webkit-animation-name:bar-seven; /* Give the bar an animation with a
+    unique name */
+}
+#data-eight{
+  -webkit-animation-name:bar-eight; /* Give the bar an animation with a
+    unique name */
+}
+
+#data-one,#data-two,#data-three,#data-four,#data-five,#data-six,#data-seven,#data-eight{ /* Define animation styles for all three
+    bars at once */
+  -webkit-animation-duration:1.5s; /* Animation duration in seconds */
+  -webkit-animation-iteration-count:1; /* Amount of times to loop */
+  -webkit-animation-timing-function:ease-out; /* Ease in, out etc. */
+}
+@-webkit-keyframes bar-one{
+  0%{ /* Define bar-one styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-one styles at 100% (0.5 seconds) */
+    width:2 * 30%;
+  }
+}
+@-webkit-keyframes bar-two{
+  0%{ /* Define bar-two styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-two styles at 100% (0.5 seconds) */
+    width:2 * 23%;
+  }
+}
+@-webkit-keyframes bar-three{
+  0%{ /* Define bar-three styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-three styles at 100% (0.5 seconds) */
+    width:2 * 16%;
+  }
+}
+@-webkit-keyframes bar-four{
+  0%{ /* Define bar-four styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-four styles at 100% (0.5 seconds) */
+    width:2 * 13%;
+  }
+}
+@-webkit-keyframes bar-five{
+  0%{ /* Define bar-five styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-five styles at 100% (0.5 seconds) */
+    width:2 * 10%;
+  }
+}
+@-webkit-keyframes bar-six{
+  0%{ /* Define bar-six styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-six styles at 100% (0.5 seconds) */
+    width:2 * 4%;
+  }
+}
+@-webkit-keyframes bar-seven{
+  0%{ /* Define bar-seven styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-seven styles at 100% (0.5 seconds) */
+    width:2 * 1%;
+  }
+}
+@-webkit-keyframes bar-eight{
+  0%{ /* Define bar-eight styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar-eight styles at 100% (0.5 seconds) */
+    width:2 * 3%;
+  }
+}
+
+
+#data_nd-one{
+  width: 2 * 18.8%;
+}
+#data_nd-two{
+  width: 2 * 18.5%;
+}
+#data_nd-three{
+  width: 2 * 9.4%;
+}
+#data_nd-four{
+  width: 2 * 8.7%;
+}
+#data_nd-five{
+  width: 2 * 5.8%;
+}
+#data_nd-six{
+  width: 2 * 4.7%;
+}
+#data_nd-seven{
+  width: 2 * 4.3%;
+}
+#data_nd-eight{
+  width: 2 * 4%;
+}
+#data_nd-nine{
+	width: 2 * 3.6%;
+}
+#data_nd-ten{
+	width: 2 * 2.5%;
+}
+#data_nd-eleven{
+	width: 2 * 2.5%;
+}
+#data_nd-twelve{
+	width: 2 * 2.2%;
+}
+#data_nd-one{
+  width: 2 * 18.8%;
+}
+#data_nd-two{
+  width: 2 * 18.5%;
+}
+#data_nd-three{
+  width: 2 * 9,4%;
+}
+#data_nd-four{
+  width: 2 * 8.7%;
+}
+#data_nd-five{
+  width: 2 * 5.8%;
+}
+#data_nd-six{
+  width: 2 * 4.7%;
+}
+#data_nd-seven{
+  width: 2 * 4.3%;
+}
+#data_nd-eight{
+  width: 2 * 4%;
+}
+#data_nd-nine{
+	width: 2 * 3.6%;
+}
+#data_nd-ten{
+	width: 2 * 2.5%;
+}
+#data_nd-eleven{
+	width: 2 * 2.5%;
+}
+#data_nd-twelve{
+	width: 2 * 2.2%;
+}
+#data_nd-thirteen{
+	width: 2 * 1.4%;
+}
+#data_nd-fourteen{
+	width: 2 * 21.2%;
+}
+#data_nd-one{
+  -webkit-animation-name:bar_nd-one; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-two{
+  -webkit-animation-name:bar_nd-two; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-three{
+  -webkit-animation-name:bar_nd-three; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-four{
+  -webkit-animation-name:bar_nd-four; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-five{
+  -webkit-animation-name:bar_nd-five; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-six{
+  -webkit-animation-name:bar_nd-six; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-seven{
+  -webkit-animation-name:bar_nd-seven; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-eight{
+  -webkit-animation-name:bar_nd-eight; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-nine{
+  -webkit-animation-name:bar_nd-nine; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-ten{
+  -webkit-animation-name:bar_nd-ten; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-eleven{
+  -webkit-animation-name:bar_nd-eleven; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-twelve{
+  -webkit-animation-name:bar_nd-twelve; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-thirteen{
+  -webkit-animation-name:bar_nd-thirteen; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-fourteen{
+  -webkit-animation-name:bar_nd-fourteen; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-one,#data_nd-two,#data_nd-three,#data_nd-four,#data_nd-five,#data_nd-six,#data_nd-seven,#data_nd-eight,#data_nd-nine,#data_nd-ten,#data_nd-twelve,#data_nd-thirteen,#data_nd-fourteen{ /* Define animation styles for all three
+    bar_nds at once */
+  -webkit-animation-duration:1.5s; /* Animation duration in seconds */
+  -webkit-animation-iteration-count:1; /* Amount of times to loop */
+  -webkit-animation-timing-function:ease-out; /* Ease in, out etc. */
+}
+
+
+#data_nd-one{
+  -webkit-animation-name:bar_nd-one; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-two{
+  -webkit-animation-name:bar_nd-two; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-three{
+  -webkit-animation-name:bar_nd-three; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-four{
+  -webkit-animation-name:bar_nd-four; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-five{
+  -webkit-animation-name:bar_nd-five; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-six{
+  -webkit-animation-name:bar_nd-six; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-seven{
+  -webkit-animation-name:bar_nd-seven; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-eight{
+  -webkit-animation-name:bar_nd-eight; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-nine{
+  -webkit-animation-name:bar_nd-nine; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-ten{
+  -webkit-animation-name:bar_nd-ten; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-eleven{
+  -webkit-animation-name:bar_nd-eleven; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-twelve{
+  -webkit-animation-name:bar_nd-twelve; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-thirteen{
+  -webkit-animation-name:bar_nd-thirteen; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-fourteen{
+  -webkit-animation-name:bar_nd-fourteen; /* Give the bar_nd an animation with a
+    unique name */
+}
+#data_nd-one,#data_nd-two,#data_nd-three,#data_nd-four,#data_nd-five,#data_nd-six,#data_nd-seven,#data_nd-eight,#data_nd-nine,#data_nd-ten,#data_nd-twelve,#data_nd-thirteen,#data_nd-fourteen{ /* Define animation styles for all three
+    bar_nds at once */
+  -webkit-animation-duration:1.5s; /* Animation duration in seconds */
+  -webkit-animation-iteration-count:1; /* Amount of times to loop */
+  -webkit-animation-timing-function:ease-out; /* Ease in, out etc. */
+}
+
+@-webkit-keyframes bar_nd-one{
+  0%{ /* Define bar_nd-one styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-one styles at 100% (0.5 seconds) */
+    width:2 * 18.8%;
+  }
+}
+@-webkit-keyframes bar_nd-two{
+  0%{ /* Define bar_nd-two styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-two styles at 100% (0.5 seconds) */
+    width:2 * 18.5%;
+  }
+}
+@-webkit-keyframes bar_nd-three{
+  0%{ /* Define bar_nd-three styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-three styles at 100% (0.5 seconds) */
+    width:2 * 9.4%;
+  }
+}
+@-webkit-keyframes bar_nd-four{
+  0%{ /* Define bar_nd-four styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-four styles at 100% (0.5 seconds) */
+    width:2 * 8.7%;
+  }
+}
+@-webkit-keyframes bar_nd-five{
+  0%{ /* Define bar_nd-five styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-five styles at 100% (0.5 seconds) */
+    width:2 * 5.8%;
+  }
+}
+@-webkit-keyframes bar_nd-six{
+  0%{ /* Define bar_nd-six styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-six styles at 100% (0.5 seconds) */
+    width:2 * 4.7%;
+  }
+}
+@-webkit-keyframes bar_nd-seven{
+  0%{ /* Define bar_nd-seven styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-seven styles at 100% (0.5 seconds) */
+    width:2 * 4.3%;
+  }
+}
+@-webkit-keyframes bar_nd-eight{
+  0%{ /* Define bar_nd-eight styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-eight styles at 100% (0.5 seconds) */
+    width:2 * 4%;
+  }
+}
+@-webkit-keyframes bar_nd-nine{
+  0%{ /* Define bar_nd-nine styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-nine styles at 100% (0.5 seconds) */
+    width:2 * 3.6%;
+  }
+}
+@-webkit-keyframes bar_nd-ten{
+  0%{ /* Define bar_nd-ten styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-ten styles at 100% (0.5 seconds) */
+    width:2 * 2.5%;
+  }
+}
+@-webkit-keyframes bar_nd-eleven{
+  0%{ /* Define bar_nd-eleven styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-eleven styles at 100% (0.5 seconds) */
+    width:2 * 2.5%;
+  }
+}
+@-webkit-keyframes bar_nd-twelve{
+  0%{ /* Define bar_nd-twelve styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-twelve styles at 100% (0.5 seconds) */
+    width:2 * 2.2%;
+  }
+}
+@-webkit-keyframes bar_nd-thirteen{
+  0%{ /* Define bar_nd-thirteen styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-thirteen styles at 100% (0.5 seconds) */
+    width:2 * 1.4%;
+  }
+}
+@-webkit-keyframes bar_nd-fourteen{
+  0%{ /* Define bar_nd-fourteen styles at 0% (0 seconds) */
+    width:0%;
+  }
+  100%{ /* Define bar_nd-fourteen styles at 100% (0.5 seconds) */
+    width:2 * 21.2%;
+  }
+}
+
+/*<dt>obrazki</dt>
+  			<dd><span id="data_nd-nine">3,6%</span></dd>
+  		<dt>rasizm</dt>
+  			<dd><span id="data_nd-ten">2,5%</span></dd>
+  		<dt>polityka</dt>
+  			<dd><span id="data_nd-eleven">2,5%</span></dd>
+			<dt>netykieta</dt>
+  			<dd><span id="data_nd-twelve">2,2%</span></dd>
+  		<dt>osobista krytyka</dt>
+  			<dd><span id="data_nd-thirteen">1,4</span></dd>
+  		<dt>inne</dt>
+  			<dd><span id="data_nd-fourteen">11,5%</span></dd>
+*/

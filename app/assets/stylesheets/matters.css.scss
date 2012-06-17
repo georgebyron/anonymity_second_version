@@ -52,7 +52,7 @@ $write: 'ClassicRound-Medium';
 }
 
 .main_matter {
-	border: 1px #111 solid;
+	border: 3px #111 solid;
 	background-image: url('../images/pattern6.png');
 	h1 {
 		}
@@ -60,7 +60,7 @@ $write: 'ClassicRound-Medium';
 	}
 
 .little_header {
-	height: 50px;
+	min-height: 50px;
 	background-image: url('../images/pattern4.png');
 	padding: 40px 20px 0px; }
 
@@ -79,11 +79,93 @@ $write: 'ClassicRound-Medium';
 	}}
 
 .single_comment {
-	border: solid #111 1px;
-	background-image: url('../images/pattern2.png');
-	padding: 20px;
 	margin-bottom: 20px;
-	 }
+	width: 700px;
+	margin: 0 auto;
+	min-height: 150px;
+	padding: 15px;
+	}
+
+.matter_navigate_block{
+	width: 114px;
+	padding: 15px;
+	float: left;
+	overflow: hidden;
+	}
+	
+.matter_icon {
+	width: 100px;
+}
+
+.matter_icon_name {
+	font-size: 16px;
+	padding: 10px;
+	color: #000;
+}
+
+.matter_comment_date {
+	color: #5d88b1;
+}
+
+.comment_content {
+	width: 510px;
+	border: solid 3px #000;
+	padding: 20px;
+	float: right;
+	background-image: url('../images/pattern2.png');
+	}
+
+.single_comment:nth-child(2n+1) .comment_content {
+	background-image: url('../images/pattern6.png');	
+	}
+
+.comment_form_block {
+	height: 500px;
+	border-top: solid 3px #000;
+	border-bottom: solid 3px #000;
+	background-image: url('../images/pattern6.png');
+	margin-bottom: 20px;
+}
+
+.comment_form {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.comment_field_left {
+	width: 300px;
+	padding: 50px;
+	float: left;
+	margin-left: 40px;
+	font-size: 24px;
+	img {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+
+.comment_field_right {
+	width: 500px;
+	padding: 20px;
+	float: right;
+	font-size: 24px;
+	textarea {
+		width: 500px;
+		height: 350px;
+		border: solid 3px #000;
+		}
+	input {
+		width: 150px;
+		height: 50px;
+		font-family: $write;
+		font-size: 24px;
+		float: right;}
+	}
+
+#comment_icon {
+	position: relative;
+	left: 20px;
+	}
 
 .issue {
 	width: 700px;
@@ -121,4 +203,52 @@ $write: 'ClassicRound-Medium';
 	font-size: 1.5em;
 	}
 
+.return_link {
+	font-family: $regular_font;
+	font-size: 2.5em;
+	padding: 30px;
+	a {
+		color: #5d88b1;
+		&:hover {
+			color: #000;
+	}}
+	}
+	
+.matter_box {
+	height: 500px;
+	width: 900px;
+	margin: 0 auto;
+ 	padding: 30px;
+	position: relative;
+	top: 40px;
+	border: solid 3px #000;
+	background-image: url('../images/pattern6.png');
+	font-size: 2em;
+	
+	textarea {
+		border: solid 3px #000;
+	}
+}
 
+.matter_box_left {
+	float: left;
+	width: 300px;
+	padding: 50px;
+}
+
+.matter_box_right {
+	float: right;
+	width: 400px;
+	padding: 50px;
+	}
+#matter_button {
+		font-size: 1em;
+		float: right;
+		width: 100px;
+		height: 45px;
+		margin-right: 40px;
+	}
+#new_matter_icon {
+	margin-top: 160px;
+	width: 300px;
+	}

@@ -4,7 +4,7 @@ class Ability
 def initialize(user)
 
 			#can :manage, :all
-			can :read, :all
+			can :read, Matter
 			can :create, Comment
 			can :create, Matter
 

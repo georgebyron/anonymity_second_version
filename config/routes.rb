@@ -6,9 +6,6 @@ Anonymity2::Application.routes.draw do
 
 	get "static_pages/home"
 
-  get "static_pages/help"
-	match "pomoc" => "static_pages#help"
-
   get "static_pages/about"
 	match "o_stronie" => "static_pages#about"
 
@@ -26,6 +23,9 @@ Anonymity2::Application.routes.draw do
 
   get "static_pages/statistics"
 	match "statystyki" => "static_pages#statistics"
+
+	get "static_pages/help"
+	match "o_stronie" => "static_pages#about"
 
   resources :comments
 
