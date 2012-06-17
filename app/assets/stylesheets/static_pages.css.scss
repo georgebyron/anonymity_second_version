@@ -237,6 +237,37 @@ $write: 'ClassicRound-Medium';
 		margin-right: 40px;}
 	}
 
+/*patologie obrazki*/
+
+#sprzedam_dziewictwo_image, #handel_organami_image, #sprzedam_dziecko_image {
+	border: solid #000 1px;
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 20px;
+	}
+
+/*about me*/
+
+.about_me {
+	height: 400px;
+	width: 100%;
+	border-bottom: solid 3px #000;
+	background-image: url('../images/pattern4.png');
+	}
+
+.about_me_content {
+	width: 700px;
+	margin: 0 auto;
+position: relative;
+	top: 70px;	
+	p {
+	font-family: $write;
+	font-size: 1.25em;
+	text-align: center;
+	}
+}
+
+
 /*statistics*/
 /*------------------------------------*\
   CHART

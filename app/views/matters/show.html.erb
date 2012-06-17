@@ -1,8 +1,8 @@
 <%= render :template => './_menu.html.erb' %>
 
-
 <div class="single_issue">
 	<span class="return_link"><%= link_to 'powrót do wątków', matters_path %></span>
+	<p id="notice"><%= notice %></p>
 	<div class="main_matter">
 		<div class="little_header">
 			<h1><%= @matter.title %></h1>
@@ -10,17 +10,21 @@
 		<p class="description">
 	   <%= @matter.description %>
 		</p>
-
+		
 		<div class="little_footer">
-		<p><span class="name">~<%= @matter.name %></span></p>
+		<p><% if current_admin %>
+<%= link_to 'Edytuj', edit_matter_path(@matter) %>
+<% end %></p>
+		<p> <span class="name">~<%= @matter.name %></span></p>
 		<div class="clear"></div>
 	</div>
 </div>
 <div class="comments">
-<h2>dyskusja:</h2>
+
   <% @matter.comments.each do |comment| %>
 	<div class="single_comment">
 		<div class="matter_navigate_block">
+			
 			<%= image_tag "ikona3.png", :class=>"matter_icon" %></br>
 				<span class="matter_icon_name">~<%= comment.name %></span></br>
 				<span class="matter_comment_date"><%= comment.created_at.strftime('%d/%m/%Y o %H:%M') %></span></br>
@@ -44,6 +48,7 @@
 <span class="return_link"><%= link_to 'powrót do wątków', matters_path %></span>
 <div class="comment_form_block">
 	<div class="comment_form">
+			<h1>Dołącz do dyskusji:</h1>
 	<%= form_for Comment.new, method: "post" do |comment| %>
 	    <div class="comment_field_left">
 				<%= comment.hidden_field :matter_id, value: @matter.id %>
@@ -71,7 +76,5 @@
 	</div>
 </div>
 
-<% if current_admin %>
-<%= link_to 'Edytuj', edit_matter_path(@matter) %>
-<% end %> 
+
 <span class="return_link"><%= link_to 'powrót do wątków', matters_path %></span>

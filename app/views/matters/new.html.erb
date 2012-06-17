@@ -4,9 +4,17 @@
 <div class="matter_box">
 <h1>Tworzenie nowego wątku:</h1>
 <%= form_for(@matter) do |f| %>
-  <% if @matter.errors.any? %>
+  
+
+<div class="matter_box_left">
+	<div class="field">
+    <%= f.label 'imię:' %><br />
+    <%= f.text_field :name %>
+  </div>
+
+<% if @matter.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@matter.errors.count, "error") %>. To coś nie pozwoliło na zapisanie Twojego wątku. Przepraszam. Skontaktuj się proszę z <%= link_to 'administratorem', o_stronie_path %> strony</h2>
+      <h2><%= pluralize(@matter.errors.count, "error") %>. Pojawiły się błędy, które nie pozwoliły na zapisanie Twojego wątku.</br> Przepraszam.</br> Jeżeli nie wiesz co się dzieje, skontaktuj się z <%= link_to 'administratorem', o_stronie_path %> strony.</h2>
 
       <ul>
       <% @matter.errors.full_messages.each do |msg| %>
@@ -14,14 +22,9 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
-
-<div class="matter_box_left">
-	<div class="field">
-    <%= f.label 'imię:' %><br />
-    <%= f.text_field :name %>
-  </div>
+  <% else %>
 	<%= image_tag 'grupa.png', :id=>"new_matter_icon" %>
+	<% end %>
 </div>
 <div class="matter_box_right">
   <div class="field">

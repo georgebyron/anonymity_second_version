@@ -47,7 +47,7 @@ class MattersController < ApplicationController
 
     respond_to do |format|
       if @matter.save
-        format.html { redirect_to @matter, notice: 'Matter was successfully created.' }
+        format.html { redirect_to @matter, notice: 'Dyskusja otworzona' }
         format.json { render json: @matter, status: :created, location: @matter }
       else
         format.html { render action: "new" }
@@ -63,7 +63,7 @@ class MattersController < ApplicationController
 
     respond_to do |format|
       if @matter.update_attributes(params[:matter])
-        format.html { redirect_to @matter, notice: 'Matter was successfully updated.' }
+        format.html { redirect_to @matter, notice: 'temat dyskusji zaktualizowany' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }

@@ -1,11 +1,10 @@
-<h1>Listing comments</h1>
-
+<%= render :template => './_menu.html.erb' %>
+<div class="comments_listing">
 <table>
   <tr>
-    <th>Name</th>
+    <th>Imię</th>
     <th>Email</th>
-    <th>Content</th>
-    <th>Matter</th>
+    <th>Treść</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,15 +14,12 @@
   <tr>
     <td><%= comment.name %></td>
     <td><%= comment.email %></td>
-    <td><%= comment.content %></td>
-    <td><%= comment.matter_id %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>
+    <td class="comment_listing_content"><%= comment.content %></td>
+    <td><%= link_to 'Edytuj', edit_comment_path(comment) %></td>
+    <td class="comment_listing_delete"><%= link_to 'Usuń', comment, confirm: 'Na pewno chcesz usunąć ten komentarz?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
+</div>
 
-<%= link_to 'New Comment', new_comment_path %>

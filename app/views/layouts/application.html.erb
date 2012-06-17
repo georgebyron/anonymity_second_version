@@ -12,7 +12,7 @@
 <% if current_admin %>	
     <div class="moderator_strip">
 			<div class="moderator_strip_content">
-				Zalogowano jako <%= current_admin %>. Przejdź do: <%= link_to "edycja komentarzy", comments_path %> // <%= link_to "edycja wątków", matters_path %> // <%= link_to("wyloguj", destroy_admin_session_path, :method => :delete) %> 
+				Zalogowano jako <%= current_admin.email %>. Przejdź do: <%= link_to "edycja komentarzy", comments_path %> // <%= link_to "edycja wątków", matters_path %> // <%= link_to("wyloguj", destroy_admin_session_path, :method => :delete) %> 
 			</div>
 		</div>
 		<% end %>

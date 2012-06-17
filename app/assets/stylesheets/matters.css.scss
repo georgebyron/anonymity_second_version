@@ -125,6 +125,10 @@ $write: 'ClassicRound-Medium';
 	border-bottom: solid 3px #000;
 	background-image: url('../images/pattern6.png');
 	margin-bottom: 20px;
+	h1 {
+	position: relative;
+	top: 20px;
+	}
 }
 
 .comment_form {
@@ -140,7 +144,6 @@ $write: 'ClassicRound-Medium';
 	font-size: 24px;
 	img {
 		margin-top: 20px;
-		margin-left: 20px;
 	}
 }
 
@@ -164,7 +167,9 @@ $write: 'ClassicRound-Medium';
 
 #comment_icon {
 	position: relative;
-	left: 20px;
+	top: 80px;
+	width: 300px;
+	left: -20px;
 	}
 
 .issue {

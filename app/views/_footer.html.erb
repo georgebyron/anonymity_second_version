@@ -1,3 +1,42 @@
-STOPKA!!!
-LOLOLO
-<p>stan logowania <%= link_to("Zaloguj", new_admin_session_path) %></p>
+<div class="footer_content">
+
+<ul><%= link_to 'Anonimowość', anonimowosc_path, :class => "link_header" %>
+<li><%= link_to 'pojęcie anonimowosci', anonimowosc_path( :anchor => "pojecie_anonimowosci") %></li>
+<li><%= link_to 'anonimowość w kulturze', anonimowosc_path( :anchor => "anonimowosc_w_kulturze") %></li>
+<li><%= link_to 'wady i zalety', anonimowosc_path( :anchor => "wady_i_zalety") %></li>
+<li><%= link_to 'podstawy prawne', anonimowosc_path( :anchor => "podstawy_prawne") %></li>
+</ul>
+
+<ul><%= link_to 'Identyfikacja', tropienie_path, :class => "link_header" %>
+<li><%= link_to 'pozostawianie śladów', tropienie_path( :anchor => "sciezki_danych") %></li>
+<li><%= link_to 'ciasteczka', tropienie_path( :anchor => "ciasteczka") %></li>
+<li><%= link_to 'mówienie o sobie', tropienie_path( :anchor => "swiadome") %></li>
+</ul>
+
+<ul><%= link_to 'Ukrywanie', sposoby_path, :class => "link_header" %>
+<li><%= link_to 'proxy', sposoby_path( :anchor => "proxy") %></li>
+<li><%= link_to 'trasowanie cebulowe', sposoby_path( :anchor => "tor") %></li>
+<li><%= link_to 'p2p', sposoby_path( :anchor => "p2p") %></li>
+<li><%= link_to 'crowds', sposoby_path( :anchor => "crowds") %></li>
+</ul>
+
+<ul><%= link_to 'Problemy', problemy_path, :class => "link_header" %>
+<li><%= link_to 'mowa nienawiści', problemy_path( :anchor => "mowa_nienawisci") %></li>
+<li><%= link_to 'mroczna strona TOR', problemy_path( :anchor => "sieci_tor") %></li>
+<li><%= link_to 'patologie', problemy_path( :anchor => "patologie") %></li>
+</ul>
+
+<ul><%= link_to 'Statystyki', statystyki_path, :class => "link_header" %>
+<li><%= link_to 'treści', statystyki_path( :anchor => "tresci") %></li>
+<li><%= link_to 'tematy', statystyki_path( :anchor => "tematy") %></li>
+</ul>
+
+<ul>
+<li><%= link_to 'dyskusje', matters_path %></li>
+<li>//</li>
+<li><%= link_to 'o stronie', o_stronie_path %></li>
+<li><%= link_to("zaloguj", new_admin_session_path) %></li>
+</ul>
+<div class="clear"></div>
+<p>Jakub Kulesza 2012 - Projekt Licencjacki - Elektroniczne Przetwarzanie Informacji UJ</p>
+</div>

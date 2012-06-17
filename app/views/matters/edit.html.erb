@@ -1,6 +1,42 @@
-<h1>Editing matter</h1>
+<%= render :template => './_menu.html.erb' %>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @matter %> |
-<%= link_to 'Back', matters_path %>
+<div class="matter_box">
+<h1>Edytowanie wątku:</h1>
+<%= form_for(@matter) do |f| %>
+  <% if @matter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@matter.errors.count, "error") %>. To coś nie pozwoliło na zapisanie Twojego wątku. Przepraszam. Skontaktuj się proszę z <%= link_to 'administratorem', o_stronie_path %> strony</h2>
+
+      <ul>
+      <% @matter.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="matter_box_left">
+	<div class="field">
+    <%= f.label 'imię:' %><br />
+    <%= f.text_field :name %>
+  </div>
+	<%= image_tag 'grupa.png', :id=>"new_matter_icon" %>
+</div>
+<div class="matter_box_right">
+  <div class="field">
+    <%= f.label 'tytuł:' %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label 'problem:' %><br />
+    <%= f.text_area :description %>
+  </div>  
+
+  <div class="actions">
+    <%= f.submit "wyślij", :id=>"matter_button" %>
+  </div>
+</div>
+<% end %>
+
+</div>
