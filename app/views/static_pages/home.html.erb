@@ -2,7 +2,7 @@
 	<div id="menu">
 
 <div class="menu_button">
-	<a href="anonimowosc">
+	<%= link_to anonimowosc_path do %>
 	<div id="anonymity_button">
 			<%= image_tag "ikona1.png", :class=>"ikona", :style=>"width: 80px; margin-left: 20px;" %>
 	</div>
@@ -10,12 +10,12 @@
 		<h3>anonimowość</h3>
 		<p>pojęcie anonimowości</p>
 	</div>
-	</a>
+	<% end %>
 </div>
 
 
 <div class="menu_button">
-	<a href="tropienie">
+	<%= link_to tropienie_path do %>
 	<div id="tracking_button">
 				<%= image_tag "ikona2.png", :class=>"ikona" %>
 	</div>
@@ -23,12 +23,12 @@
 		<h3>identyfikacja</h3>
 		<p>sposoby tropienia użytkowników sieci</p>
 	</div>
-	</a>
+	<% end %>
 </div>
 
 
 <div class="menu_button">
-	<a href="sposoby">
+	<%= link_to sposoby_path do %>
 	<div id="methods_button">
 			<%= image_tag "ikona3.png", :class=>"ikona" %>
 	</div>
@@ -36,12 +36,12 @@
 		<h3>ukrywanie</h3>
 		<p>metody ukrywania tożsamości w sieci</p>
 	</div>
-	</a>
+	<% end %>
 </div>
 
 
 <div class="menu_button">
-	<a href="problemy">
+	<%= link_to problemy_path do %>
 	<div id="problems_button">
 		<%= image_tag "ikona4.png", :class=>"ikona" %>
 	</div>
@@ -49,12 +49,12 @@
 		<h3>problemy</h3>
 		<p>problemy wokół anonimowości w internecie</p>
 	</div>
-	</a>
+	<% end %>
 </div>
 
 
 <div class="menu_button">
-		<a href="statystyki">
+		<%= link_to statystyki_path do %>
 	<div id="statistics_button">
 		<%= image_tag "ikona5.png", :class=>"ikona" %>
 	</div>
@@ -62,7 +62,7 @@
 		<h3>statystki</h3>
 		<p>statystyki</p>
 	</div>
-	</a>
+	<% end %>
 </div>
 	<div class="clear"></div>
 

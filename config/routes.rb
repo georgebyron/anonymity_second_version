@@ -25,7 +25,7 @@ Anonymity2::Application.routes.draw do
 	match "statystyki" => "static_pages#statistics"
 
 	get "static_pages/help"
-	match "o_stronie" => "static_pages#about"
+	match "bibliografia" => "static_pages#help"
 
   resources :comments
 

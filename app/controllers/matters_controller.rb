@@ -4,6 +4,8 @@ class MattersController < ApplicationController
 
   # GET /matters
   # GET /matters.json
+
+
   def index
     @matters = Matter.all
 
@@ -21,6 +23,7 @@ class MattersController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @matter }
+
     end
   end
 
